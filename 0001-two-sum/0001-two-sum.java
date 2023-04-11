@@ -4,6 +4,8 @@ class Solution {
         int flag=-2;
         int sol[]=new int[2];
         sol[0]=10000;
+        
+        
         sol[1]=10000;
         int rem,i,j;
         int n=nums.length;
