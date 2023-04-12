@@ -37,13 +37,45 @@
 #         else:
 #             return final[0:len(final)-1]
             
+# class Solution:
+#     def simplifyPath(self, path: str) -> str:
+#         stack = []
+#         for token in path.split('/'):
+#             if token == '..':
+#                 if stack:
+#                     stack.pop()
+#             elif token and token != '.':
+#                 stack.append(token)
+#         return '/' + '/'.join(stack)
 class Solution:
     def simplifyPath(self, path: str) -> str:
-        stack = []
-        for token in path.split('/'):
-            if token == '..':
-                if stack:
-                    stack.pop()
-            elif token and token != '.':
-                stack.append(token)
-        return '/' + '/'.join(stack)
+        lis=[]
+        result="/"
+        lis=path.split("/")
+        cnt=0
+        lis.pop(0)
+        lis1=[]
+        for x in lis:
+            if x!="":
+                lis1.append(x)
+        lis1.append("")
+        lis=lis1
+        i=0
+        while lis[i]!="":
+            if lis[i]==".":
+                lis.pop(i)
+            elif lis[i]=="..":
+                lis.pop(i)
+                if i>0:
+                    lis.pop(i-1)
+                    i-=1
+            else:
+                i+=1
+        lis.pop(len(lis)-1)
+        for x in lis:
+            result+=x+"/"
+        final=result
+        if len(final)==1:
+            return final
+        else:
+            return final[0:len(final)-1]
