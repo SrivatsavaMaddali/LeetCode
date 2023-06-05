@@ -1,11 +1,11 @@
 class Solution {
     public void rotate(int[] nums, int k) {
         int length = nums.length;
-        int rotations = k % length;
+        int rot = k % length;
 
-        reverse(nums, 0, length - 1); // Reverse the entire array
-        reverse(nums, 0, rotations - 1); // Reverse the first 'rotations' elements
-        reverse(nums, rotations, length - 1); // Reverse the remaining elements
+        reverse(nums, 0, length - 1);
+        reverse(nums, 0, rot - 1); 
+        reverse(nums, rot, length - 1); 
     }
 
     private void reverse(int[] nums, int start, int end) {
