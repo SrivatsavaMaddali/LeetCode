@@ -8,8 +8,4 @@ class Solution:
             if flowerbed[i]==0 and (i==0 or flowerbed[i-1]!=1) and (i==len(flowerbed)-1 or flowerbed[i+1]!=1):
                 cnt+=1
                 flowerbed[i]=1
-        # if cnt>=n:
-        #     return True
-        # else:
-        #     return False
         return True if cnt>=n else False
