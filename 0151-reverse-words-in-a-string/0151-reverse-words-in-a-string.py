@@ -10,8 +10,6 @@ class Solution:
                 words.append(s[start:i].strip())
                 start=i
         words.append(s[start:len(s)] if wc==0 else s[start+1:len(s)])
-            
-        print(words)
         nice=[]
         for y in words:
             if y!='':
