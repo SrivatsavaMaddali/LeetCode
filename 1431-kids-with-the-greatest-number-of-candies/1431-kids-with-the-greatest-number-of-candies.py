@@ -3,6 +3,6 @@ class Solution:
         result=[]
         m=max(candies)
         for i in candies:
-            result.append(True if extraCandies+i>=m else False)
+            result.append(extraCandies+i>=m)
         return result
         
