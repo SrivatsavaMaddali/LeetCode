@@ -5,6 +5,4 @@ class Solution:
         for x in words[::-1]:
             result+=x+" "
         result=result.strip()
-        return result
-                
-        
+        return result 
