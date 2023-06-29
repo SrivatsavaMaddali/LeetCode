@@ -9,10 +9,8 @@ class Solution:
                 wc+=1
                 words.append(s[start:i].strip())
                 start=i
-        if wc==0:
-            words.append(s[start:len(s)])
-        else:
-            words.append(s[start+1:len(s)])
+        words.append(s[start:len(s)] if wc==0 else s[start+1:len(s)])
+            
         print(words)
         nice=[]
         for y in words:
