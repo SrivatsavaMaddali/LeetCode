@@ -1,6 +1,5 @@
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
-        i=0
         if n==0:
             return True
         cnt=0
