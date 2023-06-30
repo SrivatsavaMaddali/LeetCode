@@ -1,3 +1,5 @@
+# This is very niave and stupid approach which took 2 hours and several test cases based modifications to complete
+# Ideally, shouldn't follow this solution at all
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
         indices = {}
