@@ -6,11 +6,10 @@ class Solution:
         j=0
         cnt=0
         while i<len(s) and j<len(t):
-            if s[i]==t[j]:
+            if t[j]!=s[i]:
+                j+=1
+            else:
                 i+=1
                 j+=1
                 cnt+=1
-                continue
-            if t[j]!=s[i]:
-                j+=1
         return cnt==len(s)
