@@ -4,5 +4,5 @@ from (select visited_on, sum(amount) as amount from Customer group by visited_on
 (select visited_on, sum(amount) as amount from Customer group by visited_on ) a
 where datediff(a.visited_on,c.visited_on) between 0 and 6
 group by a.visited_on
-having count(a.visited_on)=7
+having count(c.visited_on)=7
 order by visited_on
