@@ -5,6 +5,4 @@ class Solution:
             if nums[i] not in res:
                 res.append(nums[i])
         nums[:len(res)]=res
-        for i in range(len(res),len(nums)):
-            nums[i]='_'
         return len(res)
