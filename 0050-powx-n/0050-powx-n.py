@@ -12,3 +12,4 @@ class Solution:
             x *= x
             n //= 2
         return 1/result if m<0 else result
+#This approach uses exponentiation, specifically, binary exponentiation
