@@ -1,4 +1,4 @@
-ALLOF THESE EXCEED TIME LIMIT FOR LARGE ARRAYS
+ALL OF THESE EXCEED TIME LIMIT FOR LARGE ARRAYS
         
         n=len(nums)
         for i in range(0,n):
