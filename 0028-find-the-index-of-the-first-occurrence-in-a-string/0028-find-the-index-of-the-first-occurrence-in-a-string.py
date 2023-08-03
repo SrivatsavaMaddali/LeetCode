@@ -9,7 +9,4 @@ class Solution:
             else:
                 i=i-j+1
                 j=0
-        print(i)
-        print(j)
-        print(n)
         return i-n if j==n else -1
