@@ -5,16 +5,6 @@ class Solution:
         """
         m=len(matrix)
         n=len(matrix[0])
-        # rs=[1 for _ in range(m)]
-        # cs=[1 for _ in range(n)]
-        # for i in range(m):
-        #     for j in range(n):
-        #         if matrix[i][j]==0 and (rs[i]==1 and cs[j]==1):
-        #             rs[i]=0
-        #             cs[j]=0
-        #             matrix[i]=[0 for _ in range(n)]
-        #             for k in range(m):
-        #                 matrix[k][j]=0
         rs=[]
         cs=[]
         for i in range(m):
