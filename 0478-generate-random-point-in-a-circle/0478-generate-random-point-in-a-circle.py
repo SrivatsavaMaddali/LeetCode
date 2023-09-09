@@ -3,7 +3,7 @@ class Solution:
     def __init__(self, radius: float, x_center: float, y_center: float):
         self.r,self.x,self.y=radius,x_center,y_center
     def randPoint(self) -> List[float]:
-        r = sqrt(random.random())*self.r
+        r = sqrt(random.uniform(0,1))*self.r
         theta=random.uniform(0, 2*pi)
         return [self.x + r * math.cos(theta), self.y + r *math.sin(theta)]
 # Your Solution object will be instantiated and called as such:
