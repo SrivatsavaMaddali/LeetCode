@@ -13,7 +13,7 @@ class Solution:
         while curr.next:
             n+=1
             curr=curr.next
-        k=k % n
+        k=k%n
         if k==0:
             return head
         curr=head
